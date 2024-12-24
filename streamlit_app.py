@@ -1,9 +1,10 @@
 import streamlit as st
 from PIL import Image
 
-# Cover Image
+# Cover Image and Introduction
 cover_image = r'Ref/Front Page.jpg'
 st.image(cover_image)
+st.title("Md. Asif Al Mahmud's Portfolio")
 
 st.write("___")
 st.markdown('<p style="color: Grey; font-size: 30px; font-weight: bold;">Projects</p>', unsafe_allow_html=True)
@@ -14,10 +15,10 @@ Thumbnail_image_Highrise = r'Ref/Highrise Thumbnail.jpg'
 Thumbnail_image_Residence = r'Ref/Residence1.jpg'
 with col1:
     st.image(Thumbnail_image_Highrise)
-    st.page_link("pages/Highrise.py", label="Highrise")
+    st.write("[Highrise](./pages/Highrise.py)")
 with col2:
     st.image(Thumbnail_image_Residence)
-    st.page_link("pages/Residence.py", label="Residence")
+    st.write("[Residence](./pages/Residence.py)")
 
 # Conclusions
 st.header("")
